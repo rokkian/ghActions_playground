@@ -11,3 +11,11 @@ jobs:
           node-version: '20'
       - run: npm install -g bats
       - run: bats -v
+
+  check-ubuntu-V:
+    runs-on: ubuntu-latest
+    steps:
+      - run: cat /etc/os-release
+      - run: uname
+      - run: lscpu
+
